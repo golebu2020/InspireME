@@ -1,0 +1,38 @@
+{% extends 'PhotoApp/base.html' %}
+{% block title %}
+PhotoOffice | Add Photo
+{% endblock %}
+
+{% block content %}
+
+<section class="add-section" >
+  <div class="container">
+    <a href = "{% url 'home' %}" class="btn-cat" style="width: 10rem; position:absolute; top:0; left:0; margin: 2rem; text-decoration: none;">BACK</a>
+    <form class="form" action="" method="POST" enctype="multipart/form-data" style="width: 25%">
+      {% csrf_token %} 
+      <h2 class="form-title">ADD PICTURE</h2>
+      <label for="title">Title</label>
+      <input id="title" name="title" class="title" type="text" placeholder="Picture Title" style="height: 4.0rem;">
+
+      <label for="description">Description</label>
+      <input id="description" name="description" class="description" type="text" placeholder="Description" style="height: 4.0rem;">
+
+      <label for="category">Category</label>
+      <select name="category" id="category" class="category" style="border-radius: 20px;height: 4.0rem;">
+        <option value="None">Select picture category</option>
+        <option value="all">All</option>
+        <option value="travel">Travel</option>
+        <option value="country">Country</option>
+        <option value="food">Food</option>     
+      </select>
+
+      <label for="image">Select Image</label>
+      <input name="image" type="file" placeholder="Select Image" class="image" style="display:flex; justify-content:center; align-items:center;height: 4.0rem;">
+      <button class="btn-save" id="btn-save" type="submit">Save</button>
+  
+    </form>
+  </div>
+
+</section>
+
+{% endblock %}

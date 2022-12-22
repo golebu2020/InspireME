@@ -1,0 +1,391 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  color: #555;
+}
+
+body{
+  line-height: 1;
+  font-family:'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: #fff;
+ 
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+
+}
+
+form{
+  background: #fff;
+  border-radius: 10px;
+  display: grid;
+  flex-direction: column;
+  width: 36rem;
+  padding: 3rem;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0.2rem 0.7rem 2rem 0.8rem rgba(216, 214, 214, 0.495);
+  
+}
+label{
+  margin-bottom: 1rem;
+}
+input{
+  height: 5rem;
+  padding: 0.5rem 2rem;
+  margin-bottom: 2.0rem;
+  border: none;
+  border-radius: 20px;
+  background: rgba(216, 214, 214, 0.302);
+  font-size: 1.6rem;
+}
+
+image{
+  padding: 0.5rem 2rem;
+}
+
+
+.form-title{
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-weight: bold;
+  
+}
+
+.category{
+  margin-bottom: 2rem;
+  border: none;
+  background: rgba(216, 214, 214, 0.495);
+  height: 5rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.6rem;
+}
+
+.btn-save{
+  height: 5rem;
+  background-color: #fe4066;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-save:hover{
+  background-color: #fe4066b9;
+
+}
+
+*:focus{
+  outline: none;
+  box-shadow: 0 0 0 0.5rem hsla(0, 0%, 51%, 0.572);
+
+}
+
+/* The Auth Page Styling */
+
+section{
+  display: grid;
+  grid-template-columns: 55fr 35fr;
+}
+
+.logo{
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  margin-left: 10px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  
+}
+
+.logo-me{
+  color: #fff;
+  background: #fe4066;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.4rem 0.5rem 0.8rem rgba(216, 214, 214, 0.495);
+}
+
+.login-container{
+  height: 100vh;
+}
+/* "/static/PhotoApp/clubgirl.jpg" */
+/* background: url("/static/img/sample.jpeg") 50% 0 no-repeat fixed; */
+.signup-container{
+  height: 100vh;
+  /* #fe4066 */
+  /* background-image: linear-gradient(to right bottom, hsla(0, 2%, 26%, 0.918), hsla(0, 3%, 37%, 0.826)),  */
+  background-image: linear-gradient(180deg, hsla(348, 99%, 62%, 0.681), hsla(0, 3%, 37%, 0.826)),
+
+  url("/static/PhotoApp/clubgirl.jpg") ;
+  background-repeat: no-repeat;
+  /* background-clip: border-box; */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  position: relative;
+
+}
+
+.signup--prompt{
+  color: #fff;
+  z-index: 200;
+}
+
+
+.form-login{
+  position: relative;
+  box-shadow: none;
+  width: 70%;
+}
+
+.btn-login{
+  width: 50%;
+  justify-self: center;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+
+.form-login input{
+  border-radius: 20px;
+}
+
+.form-title-login{
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+/* Signup Container */
+.form-signup{
+  position: relative;
+  box-shadow: none;
+  background: none;
+  color:#fff;
+}
+
+input{
+  border-radius: 20px;
+}
+
+
+.btn-signup{
+  border-radius: 20px;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 50%;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 12rem;
+}
+
+.btn-signup:hover{
+  background: #fe4066b9;
+  color: #fff;
+}
+
+
+
+#id_username, #id_email, #id_password1, #id_password2{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color:#555;
+
+}
+
+/* Signup Promp Section */
+
+.signup--heading{
+  color: #f2eeee;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.signup--subheading{
+  color: #f2eeee ;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+
+
+/* ========================== */
+
+.form-signup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0.2rem 0.3rem 2.0rem 0.8rem rgba(209, 206, 206, 0.27);
+
+}
+
+.form-signup{
+  color: #555;
+}
+
+.btn-signup-update{
+  border-radius: 20px;
+}
+
+.navbar{
+  padding: 1rem;
+  display: flex;
+  justify-content: end;
+  margin-right: 2rem;
+  margin-top: 2rem;
+
+}
+
+.navbar-heading{
+  font-size: 1.6rem;
+}
+.link-signup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-link{
+  text-decoration: none ;
+  color:black;
+  font-weight: bold !important;
+  transition: all .3s ease-out;
+}
+
+.header-link:hover{
+  color:#fe4066 ;
+}
+.category{
+  border-radius: 20px;
+}
+
+.btn-upload{
+  background-color: #fe4066;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 40px;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.0rem;
+  font-family:'Rubik', sans-serif;
+}
+
+.btn-upload:hover{
+  /* background-color: #fe4066b9; */
+  box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.241);
+
+}
+
+.btn-upload:active{
+  box-shadow: none;
+}
+
+.upload{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+/* <div class="profile">
+<img class="user-pics" src="https://www.dropbox.com/s/tcf4pyscta9pt13/jigneshpanchal.JPG?raw=1" alt="User picture">
+<h3 class="user-name */
+
+.profile{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+  background: linear-gradient(to right bottom, hsla(348, 99%, 62%, 0.681), hsla(0, 3%, 37%, 0.826));
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  width: 100%;
+}
+.user-pics{
+  width: 5rem;
+  height: 5rem;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: #fff;
+}
+
+
+
+.btn-cat{
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: #222;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #222;
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 30px;
+  width: 70%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.0rem;
+  font-family:'Rubik', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.btn-cat:hover{
+  background-color: #222;
+  color: #fff;
+  width: 80%;
+
+}
+
+
+
+
+
+

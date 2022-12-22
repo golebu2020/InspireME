@@ -1,0 +1,435 @@
+/* Home configuration */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&family=Rubik:wght@900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  color: #555;
+}
+
+body{
+  line-height: 1;
+  font-family:'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  overflow:hidden;
+  scroll-behavior: smooth; 
+  padding: 0.4rem;
+  background-color: rgba(235, 235, 235, 0.843);
+ 
+}
+
+.card-shadow{
+  box-shadow: 2px 1px 15px 0px rgba(157, 157, 157, 0.571);
+
+}
+
+.grid--2-col{
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.2rem;
+}
+
+.grid--3-col{
+  display: grid;
+  grid-template-columns: 20fr 60fr 20fr;
+  gap: 0.6rem;
+}
+
+.section-container{
+  height: 100vh;
+  width: 100%; 
+  
+}
+
+
+
+
+.category-recent, .personal-public, .later-save{
+  height: 100vh;
+  padding:0.5rem;
+}
+
+.category{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  /* background:hsla(0, 3%, 37%, 0.24); */
+  
+}
+
+.recent{
+  width: 100%;
+  background-color:blueviolet;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+.category-recent{
+  display: grid;
+  grid-template-rows: 33rem 1fr;
+  row-gap: 0.8rem;
+  padding-bottom: 1rem;
+
+}
+
+
+.personal-public{
+  display: grid;
+  /* grid-template-rows:0.05fr 2.5fr 0.05fr 2.5fr; */
+  grid-template-rows: 0.30fr 43% 0.30fr 43%;
+  row-gap: 0.6rem;
+}
+
+.personal-public-title{
+  color: #111;
+  padding: 0.5rem;
+  margin-top:0.1rem;
+  margin-left: 0.5rem;  
+  font-family:'Rubik', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 1.8rem;
+}
+
+
+.card{
+  height: 100%;
+  width: 18rem;
+  background: #fff;
+  /* box-shadow: 2px 1px 5px 0px rgba(0, 0, 0, 0.182); */
+  box-shadow: 2px 1px 5px 0px rgba(79, 42, 55, 0.269);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+.card2{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  box-shadow: 2px 1px 15px 0px rgba(157, 157, 157, 0.571);
+  border-radius: 5px; 
+
+}
+
+
+.personal{
+  display: flex;
+  overflow-x: auto;
+  padding: 0.7rem;
+}
+
+.public{
+  display: flex;
+  overflow-x: auto;
+  padding: 0.7rem;
+}
+
+.card{
+  flex: 0 0 auto;
+  margin-right: 1.0rem;
+}
+
+.card:last-child{
+  margin-right: 0;
+}
+
+
+.later-save{
+  display: grid;
+  grid-template-rows: 0.7fr 7fr;
+  row-gap: 0.5rem;
+  padding: 1rem;
+}
+
+
+/* Card Design? */
+.card{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  overflow: hidden;
+  align-items: start;
+}
+.text-container{
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+
+}
+
+/* max-height:100%; max-width:100% */
+.card-image{
+  width: 100%; /* or any custom size */
+  object-fit: cover;  
+  height: 18rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+img{
+  width: 100%; /* or any custom size */
+  object-fit: cover;
+  height: 15rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.my-image-container{
+  height: 18rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image:hover{
+  scale: 1.1;
+}
+
+.icons-container{
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+  color: #555;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+.title{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0.4rem;
+  color: #333;
+  margin-bottom: 0.1rem;
+  margin-left: 0.5rem;
+  font-family:'Rubik', sans-serif;
+}
+
+.author{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+  color: rgb(160, 160, 160);
+}
+.ruler{
+ opacity: .3;
+}
+.texts{
+  font-size: 1.2rem;
+}
+
+.categories{
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.home-icon{
+  width: 1.5rem;
+  height: 1.5rem;
+  color: rgba(20, 20, 20, 0.44);
+
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.home-icon:hover{
+  scale: 1.2;
+}
+
+.home-icon:active{
+  color:#fe4066;
+
+}
+
+/* Upload Pics */
+.upload-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-upload{
+  background-color: #fe4066;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 40px;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.0rem;
+  font-family:'Rubik', sans-serif;
+}
+
+.btn-upload:hover{
+  /* background-color: #fe4066b9; */
+  box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.241);
+
+}
+
+.btn-upload:active{
+  box-shadow: none;
+}
+
+.upload{
+  height: 2.5rem;
+  width: 2.5rem;
+}
+/* <div class="profile">
+<img class="user-pics" src="https://www.dropbox.com/s/tcf4pyscta9pt13/jigneshpanchal.JPG?raw=1" alt="User picture">
+<h3 class="user-name */
+
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+  padding-left: 1rem;
+  background: linear-gradient(to right bottom, hsla(348, 99%, 62%, 0.681), hsla(0, 3%, 37%, 0.826));
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  width: 100%;
+}
+.user-pics{
+  width: 5rem;
+  height: 5rem;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: #fff;
+}
+
+
+
+.btn-cat{
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: #222;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #222;
+  cursor: pointer;
+  transition: all 0.3s;
+  height: 30px;
+  width: 70%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.0rem;
+  font-family:'Rubik', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.btn-cat:hover{
+  background-color: #222;
+  color: #fff;
+  width: 80%;
+}
+
+.btn-cat:active{
+  width: 70%;
+  background-color: #fff;
+  color: #222;
+}
+
+.category h3{
+  margin: 1rem;
+  color: #555;
+  font-family:'Rubik', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  font-size: 1.6rem;
+}
+
+.user-name{
+  letter-spacing: 1.0px;
+  font-size: 10px;
+  color: #fff !important;
+  font-family:'Rubik', sans-serif;
+  font-weight: 800;
+}
+
+.btn-logout{
+  margin-top: 0.3rem;
+  width: 100%;
+  height: 2.5rem;  
+}
+
+.recent-image{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 10%;
+  box-shadow: 2px 1px 10px 1px rgba(0, 0, 0, 0.241);
+}
+.recent-text{
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-size: 1.6rem;
+}
+.list-items{
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  padding: 1rem;
+  font-size: 1.2rem !important;
+}
+.recent-title, .recent-author, .recent-category {
+ font-size: 1.2rem;
+}
+
+.recent-image-container{
+  overflow: hidden;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 10%;
+  box-shadow: 1px 1px 2px 1px rgba(106, 106, 106, 0.241);
+}
+
+.avater{
+  height: 3rem;
+  width: 3rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(218, 11, 83, 0.834);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1000;
+  left: 3px;
+  top: 3px;
+}
+
+.recent::-webkit-scrollbar{
+  background:white;
+  width: 7px;
+} 
+.recent::-webkit-scrollbar-thumb{
+ background: rgb(167, 167, 167);
+ border-radius: 7px;
+}
+
+.personal::-webkit-scrollbar, .public::-webkit-scrollbar {
+  height: 7px;
+} 
+.personal::-webkit-scrollbar-thumb, .public::-webkit-scrollbar-thumb {
+  background: rgb(167, 167, 167);
+  border-radius: 7px;
+}
+

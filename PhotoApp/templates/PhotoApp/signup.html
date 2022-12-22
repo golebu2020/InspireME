@@ -1,0 +1,41 @@
+{% extends 'PhotoApp/base.html' %}
+{% block title %}
+PhotoOffice | Sign Up
+{% endblock %}
+
+{% block content %}
+<header>
+  <nav class="navbar">
+     <p class="navbar-heading">Already hava an account?<span>   <a href="{% url 'auth' %}" class="header-link"> Log In</a></span></p>
+  </nav>
+</header>
+<main>
+  
+  <section class="add-section">
+    <div class="container">
+      <form class="form-signup" action="{% url 'signup' %}" method="POST">
+        <h2 class="form-title">SIGN UP</h2>
+       
+        {% csrf_token %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          {{ form.error }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {{ form.username.label }}
+        {{ form.username }}
+
+        {{ form.email.label }}
+        {{ form.email }}
+
+        {{ form.password1.label }}
+        {{ form.password1 }}
+
+        {{ form.password2.label }}
+        {{ form.password2 }}
+        <button class="btn-save btn-signup-update" id="btn-login" type="submit">Sign Up</button>
+      </form>
+    </div>
+   
+  </section>
+</main>
+{% endblock %}

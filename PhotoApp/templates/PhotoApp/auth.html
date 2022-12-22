@@ -1,0 +1,47 @@
+{% extends 'PhotoApp/base.html' %}
+{% block title %}
+PhotoOffice | Authentication
+{% endblock %}
+
+{% block content %}
+
+<main>
+  <section>
+      <div class="login-container">
+         {% include 'PhotoApp/app-logo.html' %}
+         <form class="form form-login" action="" method="POST">
+          {% csrf_token %}
+            {% for message in messages %}
+            <div class="messaging-container" style="width: 50rem; height: 5rem; background-color: rgb(228, 169, 50);
+             color:#555;display: flex; justify-content:center; align-items:center;
+             border-radius: 10px; padding: 5px">{{ message }}</div>
+ 
+            {% empty %}
+            {% endfor %}
+         
+         
+          <h2 class="form-title form-title-login">Login to Your Account</h2>
+          <label for="username">Username</label>
+          <input id="username" name="username" class="username" type="text" placeholder="E.g., JDoe" required>
+
+          <label for="password">Password</label>
+          <input id="password" name="password" class="description" type="password" placeholder="Enter your password">
+
+          <button class="btn-save btn-login" id="btn-login" type="submit">Login</button>
+         
+  
+          </form>
+      </div>
+      <div class="signup-container">
+        <h1 class="signup--heading">New Here?</h1>
+        <p class="signup--subheading">
+          Signup, get inspired and inspired others in the community with amazing works of creativity 
+        </p>
+        <a href="{% url 'signup' %}" class="btn-save btn-signup link-signup" id="btn-login" type="submit">Sign Up</a>
+      </div>
+ 
+  </section>
+</main>
+
+{% endblock %}
+
