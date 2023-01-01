@@ -8,7 +8,7 @@ A photo Django-based web application that helps users collect interesting photog
     <img src="static/register.PNG" alt="Login Page"/>
 </div>
 <br/>
-<hr height='12'/>
+<hr style="height:1.5px;"/>
 
 ### InspireME Registration Page
 <div>
