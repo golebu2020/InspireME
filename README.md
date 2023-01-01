@@ -3,7 +3,7 @@ A photo Django-based web application that helps users collect interesting photog
 
 ## Screenshots
 ### InspireME Login/Authentication Page
-<hr/>
+
 <div>
     <img src="static/register.PNG" alt="Login Page"/>
 </div>
@@ -11,21 +11,18 @@ A photo Django-based web application that helps users collect interesting photog
 <br/>
 
 ### InspireME Registration Page
-<hr/>
 <div>
     <img src="static/login.PNG" alt="Register Page"/>
 </div>
 <br/>
 
 ### InspireME Dashboard Page
-<hr/>
 <div>
     <img src="static/dashboard.PNG" alt="Dashboard Page"/>
 </div>
 <br/>
-<hr/>
+
 ### InspireME Upload Page
-<hr/>
 <div>
     <img src="static/upload.PNG" alt="Upload Page"/>
 </div>
