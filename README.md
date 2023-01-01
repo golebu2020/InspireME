@@ -8,19 +8,19 @@ A photo Django-based web application that helps users collect interesting photog
 </div>
 
 <br/>
-
+<hr/>
 ### InspireME Registration Page
 <div>
     <img src="static/login.PNG" alt="Register Page"/>
 </div>
 <br/>
-
+<hr/>
 ### InspireME Dashboard Page
 <div>
     <img src="static/dashboard.PNG" alt="Dashboard Page"/>
 </div>
 <br/>
-
+<hr/>
 ### InspireME Upload Page
 <div>
     <img src="static/upload.PNG" alt="Upload Page"/>
